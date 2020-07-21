@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="inner">
+          <div class="logo">
+            <a class="logo__ref" href="/">
+              <img
+                class="logo__img"
+                src="./images/logo.svg"
+                alt="site-header__logo"
+              />
+            </a>
+          </div>
+          <div class="form-group">
+            <div class="search-game">
+              <input
+                class="search-game__input"
+                type="text"
+                placeholder="Поиск по играм"
+              />
+            </div>
+            <div class="add-announce">
+              <a class="add-announce__btn" href="/add-announce">
+                <i class="fas fa-plus"></i>
+                <span class="text">Добавить объявление</span>
+              </a>
+            </div>
+          </div>
+          <div class="user-info">
+            <div class="shopcart">
+              <a class="shopcart__btn" href="/shopcart">
+                <span class="text">Покупки</span>
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-bell"></i>
+              </a>
+            </div>
+            <div class="account">
+              <a class="account__btn" href="/account">
+                <div class="avatar">
+                  <img
+                    src="./images/Avatar.png"
+                    alt="account-avatar"
+                    class="avatar__img"
+                  />
+                </div>
+                <span class="text">username</span>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <div class="container">
+        <div class="site-main__inner">
+          <aside class="aside-menu">
+            <nav class="aside-menu__nav">
+              <ul>
+                <li class="item active">
+                  <a class="item__ref" href="/gold">
+                    <span class="icon"
+                      ><img src="./images/gold.svg" alt="icon-gold"
+                    /></span>
+                    <span class="text">Золото</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/accounts">
+                    <span class="icon"
+                      ><img src="./images/account.svg" alt="icon-account"
+                    /></span>
+                    <span class="text">Аккаунты</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/items">
+                    <span class="icon"
+                      ><img src="./images/item.svg" alt="icon-item"
+                    /></span>
+                    <span class="text">Предметы</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/training">
+                    <span class="icon"
+                      ><img src="./images/training.svg" alt="icon-training"
+                    /></span>
+                    <span class="text">Прокачка</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/skins">
+                    <span class="icon"
+                      ><img src="./images/skin.svg" alt="icon-skin"
+                    /></span>
+                    <span class="text">Скины</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/maps">
+                    <span class="icon"
+                      ><img src="./images/map.svg" alt="icon-map"
+                    /></span>
+                    <span class="text">Скины</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/raid">
+                    <span class="icon"
+                      ><img src="./images/raid.svg" alt="icon-raid"
+                    /></span>
+                    <span class="text">Рейды</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="/load-more" class="item__ref load-more">
+                    <span class="text">Еще</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <section class="section-content">
+            <div class="user">
+              <div class="avatar">
+                <img
+                  class="avatar__img"
+                  src="./images/Avatar.png"
+                  alt="user-avatar"
+                />
+              </div>
+              <div class="info">
+                <div class="header">
+                  <div class="name">
+                    <span class="text">Username</span>
+                    <span class="online-status">онлайн</span>
+                  </div>
+                  <div class="btn btn-more">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+                <div class="meta">
+                  <div class="raiting">
+                    <div class="title">
+                      <span class="text">рейтинг продавца</span>
+                    </div>
+                    <div class="data">
+                      <div class="left">
+                        <span class="number">4,8</span>
+                      </div>
+                      <div class="right">
+                        <ul class="stars">
+                          <li class="star">
+                            <img
+                              class="star__img"
+                              src="./images/star.svg"
+                              alt="raiting-star"
+                            />
+                          </li>
+                          <li class="star">
+                            <img
+                              class="star__img"
+                              src="./images/star.svg"
+                              alt="raiting-star"
+                            />
+                          </li>
+                          <li class="star">
+                            <img
+                              class="star__img"
+                              src="./images/star.svg"
+                              alt="raiting-star"
+                            />
+                          </li>
+                          <li class="star">
+                            <img
+                              class="star__img"
+                              src="./images/star.svg"
+                              alt="raiting-star"
+                            />
+                          </li>
+                          <li class="star">
+                            <img
+                              class="star__img"
+                              src="./images/star.svg"
+                              alt="raiting-star"
+                            />
+                          </li>
+                        </ul>
+                        <a class="reviews-ref" href="/reviews">
+                          <span class="reviews-count">25</span>
+                          отзывов
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="register-date">
+                    <div class="title">
+                      <span class="text">дата регистрации</span>
+                    </div>
+                    <div class="data">
+                      <p class="date">16 июня 2017, 1:00</p>
+                      <p class="last-seen">3 года назад</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu">
+              <nav class="menu__nav">
+                <ul>
+                  <li class="nav-item active">
+                    <a class="nav-item__ref" href="/all">Всё</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/gold">Золото</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/account">Аккаунты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/item">Предметы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/training">Прокачка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/skin">Скины</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/map">Карты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item__ref" href="/raid">Рейды</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="current-content">
+                <div class="account">
+                  <ul class="game-list">
+                    <li class="game">
+                      <header>
+                        <div class="title">
+                          <span class="text">Аккаунты World of Tanks</span>
+                        </div>
+                        <div class="links">
+                          <a class="btn btn-bookmark" href="/bookmark">
+                            <img
+                              src="./images/bookmark.svg"
+                              alt="icon-bookmark"
+                            />
+                          </a>
+                          <a class="btn btn-share" href="/share">
+                            <img src="./images/share.svg" alt="icon-share" />
+                          </a>
+                        </div>
+                      </header>
+                      <table class="account-table">
+                        <thead>
+                          <tr>
+                            <th>сервер</th>
+                            <th>сторона</th>
+                            <th>описание</th>
+                            <th>
+                              цена
+                              <img
+                                class="filter-icon"
+                                src="./images/filter.svg"
+                                alt="icon-filter"
+                              />
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>асгард</td>
+                            <td>асмодиане</td>
+                            <td>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Porro, asperiores?
+                            </td>
+                            <td>38 535.35</td>
+                          </tr>
+                          <tr>
+                            <td>асгард</td>
+                            <td>асмодиане</td>
+                            <td>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Porro, asperiores?
+                            </td>
+                            <td>38 535.35</td>
+                          </tr>
+                          <tr>
+                            <td>асгард</td>
+                            <td>асмодиане</td>
+                            <td>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Porro, asperiores?
+                            </td>
+                            <td>38 535.35</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                    <li class="game">
+                      <header>
+                        <div class="title">
+                          <span class="text">Аккаунты World of Tanks</span>
+                        </div>
+                        <div class="links">
+                          <a class="btn btn-bookmark" href="/bookmark">
+                            <img
+                              src="./images/bookmark.svg"
+                              alt="icon-bookmark"
+                            />
+                          </a>
+                          <a class="btn btn-share" href="/share">
+                            <img src="./images/share.svg" alt="icon-share" />
+                          </a>
+                        </div>
+                      </header>
+                      <table class="account-table">
+                        <thead>
+                          <tr>
+                            <th>сервер</th>
+                            <th>сторона</th>
+                            <th>описание</th>
+                            <th>
+                              цена
+                              <img
+                                class="filter-icon"
+                                src="./images/filter.svg"
+                                alt="icon-filter"
+                              />
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>асгард</td>
+                            <td>асмодиане</td>
+                            <td>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Porro, asperiores?
+                            </td>
+                            <td>38 535.35</td>
+                          </tr>
+                          <tr>
+                            <td>асгард</td>
+                            <td>асмодиане</td>
+                            <td>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Porro, asperiores?
+                            </td>
+                            <td>38 535.35</td>
+                          </tr>
+                          <tr>
+                            <td>асгард</td>
+                            <td>асмодиане</td>
+                            <td>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Porro, asperiores?
+                            </td>
+                            <td>38 535.35</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
+                  <div class="chat">
+                    <header>
+                      <div class="user-receiver">
+                        <div class="avatar">
+                          <img
+                            class="avatar__img"
+                            src="./images/Avatar.png"
+                            alt="avatar"
+                          />
+                        </div>
+                        <div class="meta">
+                          <div class="title">
+                            Чат с <span class="username">Username</span>
+                          </div>
+                          <div class="online-status">
+                            онлайн
+                          </div>
+                        </div>
+                      </div>
+                      <div class="button-group">
+                        <a href="/copy" class="btn btn-copy">
+                          <img src="./images/copy.svg" alt="icon-copy" />
+                        </a>
+                        <a href="/share" class="btn btn-share">
+                          <img src="./images/alert.svg" alt="icon-alert" />
+                        </a>
+                      </div>
+                    </header>
+                    <section class="messages"></section>
+                    <footer>
+                      <div class="user-sender">
+                        <div class="avatar">
+                          <img src="./images/Avatar.png" alt="user-sender" />
+                        </div>
+                        <div class="input-message">
+                          <form class="send-message-form">
+                            <input
+                              type="text"
+                              name="message"
+                              id="message"
+                              placeholder="Написать..."
+                            />
+                            <a href="/send-message" class="btn btn-send">
+                              <img src="./images/send.svg" alt="icon-send"
+                            /></a>
+                          </form>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

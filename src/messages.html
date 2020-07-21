@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/messages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="inner">
+          <div class="logo">
+            <a class="logo__ref" href="/">
+              <img
+                class="logo__img"
+                src="./images/logo.svg"
+                alt="site-header__logo"
+              />
+            </a>
+          </div>
+          <div class="form-group">
+            <div class="search-game">
+              <input
+                class="search-game__input"
+                type="text"
+                placeholder="Поиск по играм"
+              />
+            </div>
+            <div class="add-announce">
+              <a class="add-announce__btn" href="/add-announce">
+                <i class="fas fa-plus"></i>
+                <span class="text">Добавить объявление</span>
+              </a>
+            </div>
+          </div>
+          <div class="user-info">
+            <div class="shopcart">
+              <a class="shopcart__btn" href="/shopcart">
+                <span class="text">Покупки</span>
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-bell"></i>
+              </a>
+            </div>
+            <div class="account">
+              <a class="account__btn" href="/account">
+                <div class="avatar">
+                  <img
+                    src="./images/Avatar.png"
+                    alt="account-avatar"
+                    class="avatar__img"
+                  />
+                </div>
+                <span class="text">username</span>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <div class="container">
+        <div class="site-main__inner">
+          <aside class="aside-menu">
+            <nav class="aside-menu__nav">
+              <ul>
+                <li class="item active">
+                  <a class="item__ref" href="/gold">
+                    <span class="icon"
+                      ><img src="./images/gold.svg" alt="icon-gold"
+                    /></span>
+                    <span class="text">Золото</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/accounts">
+                    <span class="icon"
+                      ><img src="./images/account.svg" alt="icon-account"
+                    /></span>
+                    <span class="text">Аккаунты</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/items">
+                    <span class="icon"
+                      ><img src="./images/item.svg" alt="icon-item"
+                    /></span>
+                    <span class="text">Предметы</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/training">
+                    <span class="icon"
+                      ><img src="./images/training.svg" alt="icon-training"
+                    /></span>
+                    <span class="text">Прокачка</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/skins">
+                    <span class="icon"
+                      ><img src="./images/skin.svg" alt="icon-skin"
+                    /></span>
+                    <span class="text">Скины</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/maps">
+                    <span class="icon"
+                      ><img src="./images/map.svg" alt="icon-map"
+                    /></span>
+                    <span class="text">Скины</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/raid">
+                    <span class="icon"
+                      ><img src="./images/raid.svg" alt="icon-raid"
+                    /></span>
+                    <span class="text">Рейды</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="/load-more" class="item__ref load-more">
+                    <span class="text">Еще</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <section class="main-content">
+            <div class="chat-wrapper">
+              <h2 class="chat__title">Сообщения</h2>
+              <div class="chat">
+                <header class="chat__header">
+                  <div class="user-receiver">
+                    <div class="avatar">
+                      <img
+                        class="avatar__img"
+                        src="./images/Avatar.png"
+                        alt="avatar"
+                      />
+                    </div>
+                    <div class="meta">
+                      <div class="title">
+                        Чат с <span class="username">Username</span>
+                      </div>
+                      <div class="online-status">
+                        онлайн
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-group">
+                    <a href="/copy" class="btn btn-copy">
+                      <img src="./images/copy.svg" alt="icon-copy" />
+                    </a>
+                    <a href="/share" class="btn btn-share">
+                      <img src="./images/alert.svg" alt="icon-alert" />
+                    </a>
+                  </div>
+                </header>
+                <div class="messages"></div>
+                <footer class="chat__footer">
+                  <div class="user-sender">
+                    <div class="avatar">
+                      <img src="./images/Avatar.png" alt="user-sender" />
+                    </div>
+                    <div class="input-message">
+                      <form class="send-message-form">
+                        <input
+                          type="text"
+                          name="message"
+                          id="message"
+                          placeholder="Написать..."
+                        />
+                        <a href="/send-message" class="btn btn-send">
+                          <img src="./images/send.svg" alt="icon-send"
+                        /></a>
+                      </form>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="user-search-wrapper">
+              <form class="user-search__form">
+                <div class="search">
+                  <input type="text" placeholder="Поиск пользователя" />
+                </div>
+              </form>
+              <div class="user-search__result">
+                <div class="user-list">
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="avatar">
+                      <img
+                        src="./images/Avatar.png"
+                        alt="avatar__img"
+                        class="avatar__img"
+                      />
+                    </div>
+                    <div class="meta">
+                      <span class="username">Jane Cooper</span>
+                      <span class="comment"
+                        >Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt, corporis? Doloremque alias harum
+                        deleniti enim?</span
+                      >
+                      <span class="send-date">2 месяца назад</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

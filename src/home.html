@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="site-modal js-site-modal">
+      <div class="login-form">
+        <div class="logo">
+          <a href="/" class="logo__ref">
+            <img src="./images/logo.svg" alt="logo" class="logo__img" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container">
+        <div class="inner">
+          <div class="logo">
+            <a class="logo__ref" href="/">
+              <img
+                class="logo__img"
+                src="./images/logo.svg"
+                alt="site-header__logo"
+              />
+            </a>
+          </div>
+          <nav class="user-nav">
+            <div class="form-group">
+              <div class="search-game">
+                <input
+                  class="search-game__input"
+                  type="text"
+                  placeholder="Поиск по играм"
+                />
+              </div>
+            </div>
+            <div class="user-info">
+              <div class="faq">
+                <a href="/faq" class="faq__ref">
+                  <span class="text">FAQ</span>
+                </a>
+              </div>
+              <div class="login">
+                <a
+                  href="#"
+                  class="login__ref js-login-btn"
+                  data-show-modal="login-form"
+                >
+                  <span class="text">Войти</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <div class="container">
+        <div class="site-main__inner">
+          <aside class="aside-menu">
+            <nav class="aside-menu__nav">
+              <ul>
+                <li class="item active">
+                  <a class="item__ref" href="/gold">
+                    <span class="icon"
+                      ><img src="./images/gold.svg" alt="icon-gold"
+                    /></span>
+                    <span class="text">Золото</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/accounts">
+                    <span class="icon"
+                      ><img src="./images/account.svg" alt="icon-account"
+                    /></span>
+                    <span class="text">Аккаунты</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/items">
+                    <span class="icon"
+                      ><img src="./images/item.svg" alt="icon-item"
+                    /></span>
+                    <span class="text">Предметы</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/training">
+                    <span class="icon"
+                      ><img src="./images/training.svg" alt="icon-training"
+                    /></span>
+                    <span class="text">Прокачка</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/skins">
+                    <span class="icon"
+                      ><img src="./images/skin.svg" alt="icon-skin"
+                    /></span>
+                    <span class="text">Скины</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/maps">
+                    <span class="icon"
+                      ><img src="./images/map.svg" alt="icon-map"
+                    /></span>
+                    <span class="text">Скины</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="item__ref" href="/raid">
+                    <span class="icon"
+                      ><img src="./images/raid.svg" alt="icon-raid"
+                    /></span>
+                    <span class="text">Рейды</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="/load-more" class="item__ref load-more">
+                    <span class="text">Еще</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <section class="main-content">
+            <div class="letter-filter-wrapper">
+              <section class="letter-filter">
+                <ul class="letters">
+                  <li class="letter"><span class="letter__text">A</span></li>
+                  <li class="letter"><span class="letter__text">B</span></li>
+                  <li class="letter"><span class="letter__text">C</span></li>
+                  <li class="letter"><span class="letter__text">D</span></li>
+                  <li class="letter"><span class="letter__text">E</span></li>
+                  <li class="letter"><span class="letter__text">F</span></li>
+                  <li class="letter"><span class="letter__text">G</span></li>
+                  <li class="letter"><span class="letter__text">H</span></li>
+                  <li class="letter"><span class="letter__text">I</span></li>
+                  <li class="letter"><span class="letter__text">J</span></li>
+                  <li class="letter"><span class="letter__text">K</span></li>
+                  <li class="letter"><span class="letter__text">L</span></li>
+                  <li class="letter"><span class="letter__text">M</span></li>
+                  <li class="letter"><span class="letter__text">N</span></li>
+                  <li class="letter"><span class="letter__text">O</span></li>
+                  <li class="letter"><span class="letter__text">P</span></li>
+                  <li class="letter"><span class="letter__text">R</span></li>
+                  <li class="letter"><span class="letter__text">S</span></li>
+                  <li class="letter"><span class="letter__text">T</span></li>
+                  <li class="letter"><span class="letter__text">U</span></li>
+                  <li class="letter"><span class="letter__text">V</span></li>
+                  <li class="letter"><span class="letter__text">W</span></li>
+                  <li class="letter"><span class="letter__text">А</span></li>
+                  <li class="letter"><span class="letter__text">Г</span></li>
+                  <li class="letter"><span class="letter__text">К</span></li>
+                  <li class="letter"><span class="letter__text">Л</span></li>
+                  <li class="letter"><span class="letter__text">М</span></li>
+                  <li class="letter"><span class="letter__text">П</span></li>
+                  <li class="letter"><span class="letter__text">Р</span></li>
+                  <li class="letter"><span class="letter__text">Т</span></li>
+                </ul>
+                <div class="filter-output">
+                  <div class="row">
+                    <header class="letter-value">
+                      <span class="letter-value__text letter__text">A</span>
+                    </header>
+                    <div class="game-list">
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <header class="letter-value">
+                      <span class="letter-value__text letter__text">A</span>
+                    </header>
+                    <div class="game-list">
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <header class="letter-value">
+                      <span class="letter-value__text letter__text">A</span>
+                    </header>
+                    <div class="game-list">
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="game">
+                        <header class="game__title">
+                          <a class="game__title-ref" href="/some-game"
+                            ><span class="game__title-ref-text"
+                              >Название Очень крутой игрушки чать 3</span
+                            ></a
+                          >
+                        </header>
+                        <div class="game__categories-list">
+                          <div class="game__category">
+                            <span class="game__category-text">Аккаунты</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Предметы</span>
+                          </div>
+                          <div class="game__category">
+                            <span class="game__category-text">Буст РМ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class="secret-chat-wrapper">
+              <div class="secret-chat">
+                <header class="secret-chat__title">
+                  <span class="secret-chat__title-text">Секретный чат</span>
+                </header>
+                <div class="secret-chat__messages-wrapper">
+                  <div class="secret-chat__messages">
+                    <div class="message">
+                      <div class="avatar">
+                        <img
+                          src="./images/Avatar.png"
+                          alt="avatar"
+                          class="avatar__img"
+                        />
+                      </div>
+                      <div class="meta">
+                        <div class="left">
+                          <div class="username">
+                            <span class="username__text"
+                              >Наташка Севастьянова</span
+                            >
+                          </div>
+                          <div class="message">
+                            <span class="message__text"
+                              >Те которые шарят в игре Black Desert Mobile,
+                              помогите плиз Я достиг 60 уровня и мне открылась
+                              новая миссия "Наследование или Пробуждение" я
+                              хотел наследовать ЛУчницу, а случайно наследовал
+                              Валькирию, можно как нибудь наоборот поменять
+                              наследование?</span
+                            >
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="send-date">
+                            <date class="send-date__value" datetime="16:47:01"
+                              >16:47:01</date
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message">
+                      <div class="avatar">
+                        <img
+                          src="./images/Avatar.png"
+                          alt="avatar"
+                          class="avatar__img"
+                        />
+                      </div>
+                      <div class="meta">
+                        <div class="left">
+                          <div class="username">
+                            <span class="username__text"
+                              >Наташка Севастьянова</span
+                            >
+                          </div>
+                          <div class="message">
+                            <span class="message__text"
+                              >Те которые шарят в игре Black Desert Mobile,
+                              помогите плиз Я достиг 60 уровня и мне открылась
+                              новая миссия "Наследование или Пробуждение" я
+                              хотел наследовать ЛУчницу, а случайно наследовал
+                              Валькирию, можно как нибудь наоборот поменять
+                              наследование?</span
+                            >
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="send-date">
+                            <date class="send-date__value" datetime="16:47:01"
+                              >16:47:01</date
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message">
+                      <div class="avatar">
+                        <img
+                          src="./images/Avatar.png"
+                          alt="avatar"
+                          class="avatar__img"
+                        />
+                      </div>
+                      <div class="meta">
+                        <div class="left">
+                          <div class="username">
+                            <span class="username__text"
+                              >Наташка Севастьянова</span
+                            >
+                          </div>
+                          <div class="message">
+                            <span class="message__text"
+                              >Те которые шарят в игре Black Desert Mobile,
+                              помогите плиз Я достиг 60 уровня и мне открылась
+                              новая миссия "Наследование или Пробуждение" я
+                              хотел наследовать ЛУчницу, а случайно наследовал
+                              Валькирию, можно как нибудь наоборот поменять
+                              наследование?</span
+                            >
+                          </div>
+                        </div>
+                        <div class="right">
+                          <div class="send-date">
+                            <date class="send-date__value" datetime="16:47:01"
+                              >16:47:01</date
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./js/modal-handler.js"></script>
+  </body>
+</html>
